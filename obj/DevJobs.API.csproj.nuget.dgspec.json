@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj": {
+    "C:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj",
         "projectName": "DevJobs.API",
-        "projectPath": "c:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\DevJobs.API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\DotNet\\DevJobs.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

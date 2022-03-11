@@ -1,5 +1,7 @@
 using DevJobs.API.Persistence;
 using DevJobs.API.Entities;
+using Microsoft.EntityFrameworkCore;
+
 namespace DevJobs.API.Controllers
 {
     using DevJobs.API.Models;
@@ -25,7 +27,9 @@ namespace DevJobs.API.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id) {
             var jobVacancy = _context.JobVacancies
-            .SingleOrDefault(jv => jv.Id == id);
+                .Include(jv => jv.Applications)
+                .SingleOrDefault(jv => jv.Id == id);
+
             if (jobVacancy == null) 
                 return NotFound();
             return Ok();
@@ -41,6 +45,8 @@ namespace DevJobs.API.Controllers
                 model.SalaryRange
             );
             _context.JobVacancies.Add(jobVacancy);
+            _context.SaveChanges();
+
             return CreatedAtAction("GetById", 
             new { id = jobVacancy.Id}, 
             jobVacancy);
@@ -54,6 +60,7 @@ namespace DevJobs.API.Controllers
                 return NotFound();
 
             jobVacancy.Update(model.Title, model.Description);    
+            _context.SaveChanges();
             return NoContent();
         }
     }
